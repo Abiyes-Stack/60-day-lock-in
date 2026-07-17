@@ -18,7 +18,7 @@ Fill these in (or the skill will read them from the plan file):
 ## Recipe
 
 1. Read the tracker to avoid re-adding roles and to surface overdue follow-ups (report these first).
-2. **Poll the target list first** (`pipeline/target-companies.md`) — the primary source; fresher and more accurate than aggregators. For each company, hit its board directly with lane keywords, then keep only postings ≤30 days old (see `docs/ATS_ENDPOINTS.md` for per-platform patterns):
+2. **Poll the target list first** (`pipeline/target-companies.md`) — the primary source; fresher and more accurate than aggregators. For each company, hit its board directly with lane keywords, then keep only postings ≤30 days old (see `examples/job-search/docs/ATS_ENDPOINTS.md` for per-platform patterns):
    - **Workday** boards: POST to `https://{host}/wday/cxs/{tenant}/{site}/jobs` with `{"appliedFacets":{},"limit":20,"offset":0,"searchText":"<keywords>"}` — read `postedOn` for the date filter.
    - **Greenhouse:** `GET https://boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true`.
    - **Lever:** `GET https://api.lever.co/v0/postings/{token}?mode=json`.
