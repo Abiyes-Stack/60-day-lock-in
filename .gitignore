@@ -1,0 +1,25 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+
+# ── PRIVACY MODE ─────────────────────────────────────────────
+# Your tracker, contacts, and application packs contain your
+# personal job hunt. If your fork is PUBLIC, uncomment these
+# lines to keep working data out of git (the templates ship
+# with an underscore prefix, so they stay tracked):
+#
+# pipeline/tracker.csv
+# pipeline/target-companies.md
+# pipeline/clusters/*
+# !pipeline/clusters/_TEMPLATE.md
+# pipeline/packs/*
+# !pipeline/packs/_TEMPLATE.md
+# pipeline/projects/*
+# !pipeline/projects/_SPEC_TEMPLATE.md
+# PLAN.md
+# ─────────────────────────────────────────────────────────────
